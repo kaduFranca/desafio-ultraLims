@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="desafio-2.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.3/imask.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Kadu frança</title>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Endereço</h1>
+            <form action="#">
+                <div class="input-box">
+                    <input id="cep" type="number" size="10" required>
+                    <label>Cep</label>
+                </div>
+
+                <div class="input-box">
+                    <input id="rua" type="text" required>
+                    <label>Rua</label>
+                </div>
+
+                <div class="input-box">
+                    <input id="bairro" type="text" required>
+                    <label>Bairro</label>
+                </div>
+
+                <div class="input-box">
+                    <input id="cidade" type="text" required>
+                    <label>Cidade</label>
+                </div>
+
+                <div class="input-box">
+                    <input id="estado" type="text" required>
+                    <label>Estado</label>
+                </div>
+
+                <div class="input-box">
+                    <input id="numero" type="text" required>
+                    <label>número</label>
+                </div>
+
+                <button type="submit" class="btn" onclick="saveForm()">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Endereços Salvos</h1>
+            <div id="addressList">
+
+            </div>
+            <div class="adButtons"></div>
+            <button class="clear" onclick="clearAddressList()">Limpar</button>
+            <select  class="button-select" id="selectPlace" name="Ordenar por">
+                <option value="Nenhum">Nenhum</option>
+                <option value="Bairro">Bairro</option>
+                <option value="Cidade">Cidade</option>
+                <option value="Estado">Estado</option>
+              </select>
+              <select class="button-select" id="selectSort" name="Sentido">
+                <option value="Nenhum">Nenhum</option>
+                <option value="Crescente">Crescente</option>
+                <option value="Decrescente">Decrescente</option>
+                
+              </select>
+
+        </div>
+    </div>
+    
+
+</body>
+</html>
